@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 
 
 // //serving static files
-// app.use(express.static('public'))
+app.use(express.static('public'))
 
 // app.get('/', (req, res) => {
 //     res.sendFile(__dirname + '/index.html')
