@@ -230,14 +230,16 @@ footer a:hover {
 	--modal-duration: 1s;
 	--modal-color: #428bca;
 }
-
-
+.loginsystem {
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+}
 
 .button {
 	font-size: 18px;
 	background: black;
 	padding: 5px 10px;
-	margin-right: 50px;
 	color: #fff;
 	border: 0;
 	border-radius: 5px;
@@ -250,29 +252,83 @@ footer a:hover {
 	background: whitesmoke;
 	color: black;
 }
+/* .logout nav {
+	background: pink;
+}
+.Logout nav li {
+	background: pink;
+	list-style-type: none;
+	overflow: hidden;
+	margin: 5px;
+}
+
+.Logout nav li a {
+	display: block;
+	padding: 5px;
+	color: white;
+	background: #4ba;
+
+
+	border-radius: 5px;
+	text-decoration: none;
+}
+.Logout:hover li a {
+	background: white;
+	color: black;
+} */
+
+div.logout {
+	background-color: none;
+	width: 100%;
+	margin-left: 0px;
+}
+
+div.logout ul {
+	list-style-type: none;
+	overflow: hidden;
+	margin-left: 0px;
+}
+
+div.logout ul li a {
+	font-size: 18px;
+	text-decoration: none;
+	padding: 5px 10px;
+	color: white;
+	display: block;
+	float: left;
+	margin-left: 0px;
+}
+
+div.logout ul li a:hover {
+	background-color: white;
+	color: black;
+	border-radius: 5px;
+}
 
 .SigninBtn {
 	background: red;
-	padding: 1em 2em;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-
-	display: inline-block;
-	left: 50%;
-	padding: 1em 2em;
+	padding: 1em 0.5em;
 	text-align: center;
 	color: #fff;
-	border: 0;
 	border-radius: 5px;
 	cursor: pointer;
-
-
+	display: block;
+	box-sizing: border-box;
+}
+.SigninBtn a {
+	text-decoration: none;
+	display: block;
+	color: white;
+	box-sizing: border-box;
 }
 
 .SigninBtn:hover {
 	background-color: #428bca;
+	color: white;
 }
 
 .modal {
@@ -301,7 +357,6 @@ footer a:hover {
 }
 
 .modal-header h2 {
-
 	text-align: center;
 }
 
@@ -363,10 +418,12 @@ footer a:hover {
 
 @keyframes glow {
 	from {
-		text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+		text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073,
+			0 0 60px #e60073, 0 0 70px #e60073;
 	}
 
 	to {
-		text-shadow: 0 0 20px #fff, 0 0 30px #6d3250, 0 0 40px #a73970, 0 0 50px #993768, 0 0 60px #ca4487, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+		text-shadow: 0 0 20px #fff, 0 0 30px #6d3250, 0 0 40px #a73970, 0 0 50px #993768, 0 0 60px #ca4487,
+			0 0 70px #ff4da6, 0 0 80px #ff4da6;
 	}
 }
